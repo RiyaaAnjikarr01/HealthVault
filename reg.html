@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Patient registration form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: grey;
+        }
+
+        .container {
+            border: 2.5px solid rgb(7, 46, 46);
+
+            position: relative;
+            max-width: 700px;
+            width: 100%;
+            border-radius: 8px;
+            padding: 30px;
+            margin: 0 15px;
+            background-color: white;
+            box-shadow: 0 5px 10px black;
+        }
+
+        .container header {
+            position: relative;
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .container header ::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            height: 3px;
+            width: 27px;
+            border-radius: 8px;
+            background-color: blue;
+        }
+
+        .container form {
+            position: relative;
+            min-height: 490px;
+            margin-top: 16px;
+            background-color: white;
+        }
+       
+
+        .container form .details {
+            margin-top: 30px;
+        }
+
+        .container form .title {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+            font-weight: 500px;
+            margin: 6px 0;
+            color: #333;
+        }
+
+        .container form .fields {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .input-field input[type="date"] {
+            color: #aaa;
+        }
+
+        .input-field input[type="date"]:valid {
+            color: #aaa;
+        }
+
+        form .fields .input-field {
+            display: flex;
+            width: calc(100% / 3 -15px);
+            flex-direction: column;
+            margin: 4px 0;
+        }
+
+        .input-field label {
+            font-size: 12px;
+            font-weight: 500;
+            color: brown;
+        }
+       
+
+        .input-field input {
+            outline: none;
+            font-size: 14px;
+            font-weight: 400;
+            color: #333;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+            padding: 0 15px;
+            height: 42px;
+            margin: 8px 0;
+        }
+
+        .input-field input:is(:focus, :valid) {
+            box-shadow: 0 3px 6px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>Registration</header>
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+                    <div class="fields">
+                        <div class="input-field one">
+                            <label for="name">Username</label>
+                            <input type="text" placeholder="Enter your Username">
+                        </div>
+                        <div class="input-field sec">
+                            <label for="EmailID">EmailID</label>
+                            <input type="EmailID" placeholder="Enter your EmailID">
+                        </div>
+                        <div class="input-field third">
+                            <label for="Mobile number">Mobile Number</label>
+                            <input type="number" placeholder="Enter your Mobile Number">
+                        </div> 
+                        <div class="input-field four">
+                            <label for="Gender">Gender</label>
+                            <input type="Gender" placeholder="Enter your Gender ">
+                        </div>
+                        <div class="input-field five">
+                            <label for="Occupation">Occupation</label>
+                            <input type="text" placeholder="Enter Occupation">
+                        </div>
+                        <div class="input-field six">
+                            <label for="address"> City & Address
+
+                            </label>
+                            <input type="text" placeholder="Enter City & Address">
+                        </div>
+
+
+
+                        <div class="input-field">
+                            <label for="Blood Group">Blood Group</label>
+                            <input type="text" select placeholder="Enter Blood Group">
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
